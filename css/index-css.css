@@ -1,0 +1,28 @@
+﻿*{padding: 0px;
+  margin: 0px;}
+body{background-color: #87CEFA ;
+  font: 20px "Microsoft YaHei", "Arial Narrow", HELVETICA,"宋体";
+  line-height: 1.5em;}
+a{text-decoration: none;
+   color: #000000;
+  transition: All 1s ease; 
+    -webkit-transition: All 1s ease ; 
+    -moz-transition: All 1s ease; 
+    -o-transition: All 1s ease;}
+li {  list-style-type :none;}  
+.display li ul{display: none;
+               }
+
+.container {width: 280px; 
+            height:400PX;
+            margin:100px auto; 
+            text-align: center; }
+.display{ height: 400px;
+	      width: 280px; 
+	      border: 3px solid #ffffff;
+          text-align: center;
+	     }
+#title{background-color: #ffffff;}
+#title a{color:#000000;}
+.display li a{color: #ffffff;}
+.display li  ul li a{color:#000000;}

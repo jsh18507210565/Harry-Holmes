@@ -1,0 +1,385 @@
+﻿
+*{padding: 0px;
+  margin: 0px;}
+
+html,
+body{width:100%;
+  height:100%;
+  font: 20px "Microsoft YaHei", "Arial Narrow", HELVETICA,"宋体";}
+a{text-decoration: none;
+   color: #FFFFFF;
+  transition: All 1s ease; 
+    -webkit-transition: All 1s ease ; 
+    -moz-transition: All 1s ease; 
+    -o-transition: All 1s ease;}
+a:hover{text-decoration: none;
+         color:#808080;}
+
+
+.glyphicon {font-size:2rem;
+}
+@media screen and (max-width:600px) and (min-width:400px) {
+#welcome-page,
+#introduce-page,
+#professional-skill,
+#personal-program,
+#contact-me{width:100%;
+  height:100%;}
+
+
+#welcome-page{background-color: #68ee68;
+              color:#ffffff;}
+#introduce-page{background-color: #cca4e3;}
+#professional-skill{background-color:#00e09e;}
+#personal-program{background-color:#70f3ff;}
+#contact-me{background-color:  #f9906f;
+         }
+
+#message{ position:absolute;
+          font-size: 50px;}
+#pageonedown{position:absolute;
+            left:50%;
+          top: 90% ;
+          width:40px;
+          height: 40px;
+          margin-left: -20px;
+          margin-top: 20px;
+            cursor: pointer;}
+
+#pagetwodown{ color:#ffffff;
+     position:absolute;
+     left:50%;
+     top:190%;
+   width:40px;
+   height: 40px;
+     margin-left: -20px;
+     margin-top: 20px;
+     cursor: pointer;}
+
+
+#pagethreedown{ color:#ffffff;
+     position:absolute;
+     left:50%;
+     top:290%;
+   width:40px;
+   height: 40px;
+     margin-left: -20px;
+     margin-top: 20px;
+     cursor: pointer;}
+
+#pagefourdown{ color:#ffffff;
+     position:absolute;
+     left:50%;
+     top:390%;
+   width:40px;
+   height: 40px;
+     margin-left: -20px;
+     margin-top: 20px;
+     cursor: pointer;}
+
+
+
+#pagefiveup{ color:#ffffff;
+     position:absolute;
+     left:50%;
+     top:490%;
+   width:40px;
+   height: 40px;
+     margin-left: -20px;
+     margin-top: 20px;
+     cursor: pointer;}
+
+nav{width:auto;
+    font-size:0.8rem;
+    height: 46px;
+    background-color: #50616d;
+    }
+.fixedNav{position: fixed;
+          left:0px;
+          top:0px;
+          width:100%;
+          z-index: 1000;}
+.my-name{display: block;
+         float:left;
+         margin:0.6rem 0rem;
+         margin-left: 1.0rem;}
+.nav-right{display: block;
+           float:right;
+           margin:0.6rem 0rem;
+           margin-right: 1.0rem;}
+.nav-right a{padding: 0.2rem;}
+
+#introduce-less{ color:#ffffff;
+                width:200px; 
+                height:300px;
+                position:absolute;
+               left:28%;
+               top:170%;
+               margin-top: -150px;
+               margin-left:-100px;
+               font-size: 0.5rem;
+               line-height: 0.5rem;
+               } 
+ #introduce-more{width:325px; 
+                height:300px;
+               position:absolute;
+               left:79%;
+               top:170%;
+               margin-top: -150px;
+               margin-left:-150px;
+               color:#ffffff;
+               font-size: 0.5rem;
+               line-height: 0.5rem;
+               } 
+.wordT{margin-left: 0.35rem;}   
+.wordF{margin-left: -0.25rem;} 
+
+
+#web-one a,
+#web-two a,
+#web-three a{width: 60px; /*确定左边头像长宽*/
+           height: 60px;
+           border-radius: 60px;
+           -moz-border-radius: 60px; 
+           -webkit-border-radius: 60px;
+            background-color: #ffffff;
+            float: left;
+            overflow: hidden;
+           }
+#web-myself a{width: 90px; /*确定左边头像长宽*/
+            height: 90px;
+            border-radius: 90px;
+            -moz-border-radius: 90px; 
+            -webkit-border-radius: 90px;
+            background-color: #ffffff;
+            float: left;
+            overflow: hidden;
+           } 
+
+
+#web-one  a{   position:absolute;
+            left:12%;
+            top:125%;
+            margin-top: -30px;
+            margin-left:-30px;
+            background:url(../img/github.gif) no-repeat;}    
+#web-two a{  position:absolute;
+           left:34%;
+           top:125%;
+            margin-top: -30px;
+            margin-left:-30px;
+            background:url(../img/lagou.gif) no-repeat;}  
+#web-myself a{position:absolute;
+            left:58%;
+            top:125%;
+            margin-top: -45px;
+            margin-left:-45px;
+            background:url(../img/myself-small.gif) no-repeat;}
+#web-three a{  position:absolute;
+               left:85%;
+               top:125%;
+               margin-top: -30px;
+               margin-left:-30px;
+               background:url(../img/zhihu.gif) no-repeat;} 
+
+#web-one a:hover,
+#web-two a:hover,
+#web-three a:hover{
+                     transform:rotate(360deg); 
+                     -webkit-transform:rotate(360deg); 
+                     -moz-transform:rotate(360deg); 
+                     -o-transform:rotate(360deg); }
+.personal-title{width:300px; 
+                height:100px;
+               position:absolute;
+               left:50%;
+               top:220%;
+               margin-top: -50px;
+               margin-left:-150px;
+               color:#ffffff;
+               text-align: center;
+               } 
+.personal-language{width:80px; 
+                height:300px;
+               position:absolute;
+               left:12%;
+               top:240%;
+               margin-top: 0px;
+               margin-left:-40px;
+               color:#ffffff;
+               text-align: center;
+               font-size: 0.7rem;
+               line-height: 30px;
+               }  
+.personal-language ul{border: 2px solid #ffffff;}               
+.personal-language ul li{list-style-type: none;
+                         width:80px; 
+                         height:30px;   }          
+.personal-language span{background-color:#FFFFFF; 
+                        color:#000000;
+                        display: block;
+                        width:80px; 
+                        height:30px;}  
+.personal-ideology{width:100px; 
+                height:300px;
+               position:absolute;
+               left:36%;
+               top:240%;
+               margin-top: 0px;
+               margin-left:-50px;
+               color:#ffffff;
+               text-align: center;
+               font-size: 0.7rem;
+               line-height: 30px;
+               }    
+.personal-ideology ul{border: 2px solid #ffffff;}               
+.personal-ideology ul li{list-style-type: none;
+                         width:100px; 
+                         height:30px;   }  
+.personal-ideology span{background-color:#FFFFFF; 
+                        color:#000000;
+                        display: block;
+                        width:100px;  
+                        height:30px;}  
+.personal-frame{width:80px; 
+                height:300px;
+               position:absolute;
+               left:61%;
+               top:240%;
+               margin-top: 0px;
+               margin-left:-40px;
+               color:#ffffff;
+               text-align: center;
+               font-size: 0.7rem;
+               line-height: 30px;
+               }    
+.personal-frame ul{border: 2px solid #ffffff;}               
+.personal-frame ul li{list-style-type: none;
+                         width:80px; 
+                         height:30px;   }  
+.personal-frame span{background-color:#FFFFFF; 
+                        color:#000000;
+                        display: block;
+                        width:80px; 
+                        height:30px;}  
+.personal-software{width:100px; 
+                height:300px;
+               position:absolute;
+               left:85%;
+               top:240%;
+               margin-top: 0px;
+               margin-left:-50px;
+               color:#ffffff;
+               text-align: center;
+               font-size: 0.7rem;
+               line-height: 30px;
+               }  
+.personal-software ul{border: 2px solid #ffffff;}               
+.personal-software ul li{list-style-type: none;
+                         width:100px; 
+                         height:30px;   }  
+.personal-software span{background-color:#FFFFFF; 
+                        color:#000000;
+                        display: block;
+                        width:100px; 
+                        height:30px;} 
+
+.personal-language ul li:hover,
+.personal-ideology ul li:hover,
+.personal-frame ul li:hover,
+.personal-software ul li:hover{background-color: #ffffff;
+                               color: #000000;}
+                              
+.program-title{width:300px; 
+                height:100px;
+               position:absolute;
+               left:50%;
+               top:320%;
+               margin-top: -25px;
+               margin-left:-150px;
+               color:#ffffff;
+               text-align: center;
+               }  
+#program-text-one {   position:absolute;
+               width:100px;
+           height: 300px;
+            left:16%;
+            top:350%;
+            margin-top: -25px;
+            margin-left:-50px;
+            color:#FFFFFF;
+            text-align: center;
+            font-size: 0.5rem;
+            text-align:justify;} 
+
+#program-text-two { position:absolute;
+           width:100px;
+           height: 300px;
+            left:48%;
+            top:350%;
+            margin-top:  -25px;
+            margin-left:-50px;
+            color:#FFFFFF;
+            text-align: center;
+            font-size: 0.5rem;
+            text-align:justify;}        
+
+#program-text-three   {position:absolute;
+               width:100x;
+           height: 300px;
+            left:80%;
+            top:350%;
+            margin-top:  -25px;
+            margin-left:-50px;
+            color:#FFFFFF;
+            text-align: center;
+            font-size: 0.5rem;
+            text-align:justify;} 
+#program-text-one span,
+#program-text-two span, 
+#program-text-three span{display: block;
+                         font-size: 0.8rem;
+                        padding-bottom: 0.8rem;
+                         text-align: center;}   
+#program-one a,
+#program-two a,
+#program-three a{width: 80px; /*确定左边头像长宽*/
+           height: 80px;
+           border-radius: 80px;
+           -moz-border-radius: 80px; 
+           -webkit-border-radius: 80px;
+            background-color: #ffffff;
+            float: left;
+            overflow: hidden;
+            cursor: auto;
+           }
+#program-one  a{   position:absolute;
+            left:17%;
+            top:335%;
+            margin-top: -40px;
+            margin-left:-40px;
+            background:url(../img/personal-normal.gif) no-repeat;} 
+#program-two a{   position:absolute;
+            left:50%;
+            top:335%;
+            margin-top: -40px;
+            margin-left:-40px;
+            background:url(../img/scroll-normal.gif) no-repeat;} 
+#program-three a{   position:absolute;
+            left:83%;
+            top:335%;
+            margin-top: -40px;
+            margin-left:-40px;
+            background:url(../img/mall-normal.gif) no-repeat;} 
+
+.contact{color:#ffffff;
+         width: 300px;
+         height: 100px;
+         position:absolute;
+         left:50%;
+         top:450%;
+         margin-top: -50px;
+         margin-left:-150px;
+         text-align: center;
+
+        }

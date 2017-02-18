@@ -1,0 +1,232 @@
+﻿@charset "gb2312";
+* { margin: 0; padding: 0 }
+body { background: #DDD6CC;
+        font: 20px "KaiTi","宋体", "Arial Narrow", HELVETICA;
+        color: #3F3E3C;
+        line-height: 2; }
+a {text-decoration: none;color: #000000;
+    transition: All 1s ease; 
+    -webkit-transition: All 1s ease ; 
+    -moz-transition: All 1s ease; 
+    -o-transition: All 1s ease; }/*渐变时间*/
+#nav ul,
+#nav ul li,
+#nav ul li ul,
+#nav ul li ul li{list-style-type: none;}
+
+
+/*————————————————————————————————总设定————————————————————————————————————————————*/
+
+#nav ul li a,
+#nav ul li ul li a{display: block;
+                width: 100px;
+                height: 43px;}  /*a块状长宽，充满li,应用倾斜*/
+#nav {margin: 0 20%;/*上下0，左右自动*/
+	  width: 980px;
+       text-align: center;/*文本居中*/}
+#nav ul li {  position: relative;    /*下拉栏一*/
+	          margin-right: 30px;/*产生间距，需设置高宽*/
+	          width:100px;               
+	           height: 43px;                                              
+                    }                 /**/
+#nav ul li ul   {display: none;   /*隐藏*/
+                 position: absolute;/*下拉栏二*/
+                 width:100px;  
+                 top:43px;/*下拉栏在下*/
+                     }
+#nav ul li ul li{ padding：0;
+                 height: 43px;
+                  background: #ffffff;                         
+                 background: -webkit-gradient(linear, 78% 100%, 78% 41%, from(#EFEEEC), to(#ffffff)); /*颜色渐变*/                                                      
+                    }
+header {    width: 100%;
+            height: 43px;
+         background: -webkit-gradient(linear, 78% 100%, 78% 41%, from(#EFEEEC), to(#ffffff)); /*颜色渐变*/
+        box-shadow: #D0C9C0 2px 2px 3px;/*阴影*/
+        }
+#nav ul li{  float:left ;  }/*第一栏横列*/
+#nav ul li a:hover,  /*当鼠标移动当时*/
+#nav ul li ul li a:hover,
+ #nav_current { color: #fff; background-color: #F16E50; /*悬停时候，内边距不行*/
+                     transform:skew(-10deg); 
+                     -webkit-transform:skew(-10deg); 
+                     -moz-transform:skew(-10deg); 
+                     -o-transform:skew(-10deg); } /*选中和当前页面倾斜*/
+/*——————————————————————————标题栏结束————————————————————————————————————————*/
+.newart ul li{ text-decoration: none;}
+.mainContent{width: 1000px;  /*整个主页面宽*/
+             margin: 20px auto;  /*上 20px,左右下自动*/
+            background: #E8E5DD;
+             overflow: hidden;/*多余的元素隐藏*/              
+            }
+aside{width: 270px;
+      float: left;/*让边栏距离，且向左边流动*/}
+.avatar{margin: 20px auto; /*居中,上边距20px*/
+        width: 160px; /*确定左边头像长宽*/
+        height: 160px;
+       border-radius: 160px;
+      -moz-border-radius: 160px; 
+      -webkit-border-radius: 160px; /*以头像长宽绘制圆角*/
+      background-size: 160px 160px;  /*超出圆角边框，部分隐藏*/
+            overflow: hidden;  }
+
+.avatar a { display: block; 
+           padding-top: 100px; /*内边框有背景，字体会下沉*/
+           width: 160px; 
+           height: 60px; 
+           background: url(../images/photo.gif) no-repeat;
+           background-size: 160px 160px ;  /*整个图像160，减去内边距100，应该还有60*/
+            }
+
+  /*span是a唯一元素，上面只是背景*/
+.avatar a span { display: block;
+                 text-align: center;
+                 width: 160px;
+                 font-size: 20px;
+                 background: rgba(0, 0, 0, .5);/*a透明度*/
+                -webkit-transition: margin-top .2s ease-in-out; 
+                -moz-transition: margin-top .2s ease-in-out; 
+                -o-transition: margin-top .2s ease-in-out;
+                transition: margin-top .2s ease-in-out; /*变化属性名，时间，过渡曲线，延时*/
+                margin-top: 60px; /*令其隐藏*/
+                height: 60px;
+                 }
+.avatar a:hover span { display: block; 
+                       margin-top: 0;   /*令其显示*/
+                        color:#ffffff;  }
+/*——————————————————————————————会动的头像——————————————————————————————————————————*/
+.topspaceinfo { background: #f16e50;
+                padding: 40px 20px; /*上宽下窄*/
+                color: #fff }
+.topspaceinfo p { font-size: 18px; 
+                line-height: 40px;
+                 }
+
+.userinfo { padding: 20px 30px 30px; 
+            font-size: 18px; 
+            line-height: 28px; 
+            color: #666; }
+.userinfo a { color: #f16e50;
+              padding-right: 10px }
+.userinfo a:hover { color: #000 }
+
+
+.newatr{padding: 0 10px ;}
+.newart h2,
+.hobby h2{background-color: #f16e50;
+            font-size: 24px;  
+            padding-left: 20px;                      
+           color:#ffffff;  }
+.newart a{font-size: 18px;  
+          padding-left: 25px;   }
+.newart  a:hover {  opacity: 0.5  ; }/*透明度0.5*/
+.hobby ul {margin-left: 12px;}   
+.hobby ul li{padding-left: 8px;
+            font-size: 18px; 
+            display: inline;  }
+/*______________________________________左侧边栏完成————————————————————————————————————————*/
+.main{width: 730px;
+      background: #fff;
+      float:right;    }
+.main article { border-bottom: #F4F3EF 40px solid; }
+#box{ display: none; }
+.title{background:  url(../images/titlebg.png) no-repeat 5% 80%; /*确定图像位置，靠左0%,靠右100%，范围是h2标题范围*/
+       font-size: 24px; 
+       line-height: 28px;   /*插入图像大小为28*28*/  
+       display: inline-block;/*内联元素同一行，且设置块有关属性*/
+       padding: 38px 0px 8px 80px; 
+       border-bottom: 1px solid #e2e2e2; /*设置线*/
+       width: 100%;    /*线宽100%*/
+          }
+.title a { color: #454545; }
+.title a:hover { padding: 20px }  /*当悬停在题目上时，题目移开距离*/
+.text { font-size: 20px; padding: 20px 40px; }
+.text p { line-height: 24px; 
+          margin-bottom: 10px; /*段落之间空行*/
+           text-indent: 2em;/*开头空两格*/              }
+.texting { text-align: center }
+.textimg img { max-width: 500px; /*元素最大宽度*/
+              width:expression(document.body.clientWidth > 500? "500px": "auto" );}/*for ie6，若页面显示大，则确定图像大小。否则居中*/
+
+
+.textfoot { padding: 20px 60px;
+             border-top: 1px solid #dddcdb; 
+             text-align: right;
+            box-shadow: #999 2px 2px 3px;}
+.textfoot a { margin-left: 10px; }/*元素间隔开*/
+
+.pages {  margin-top: 3px;
+          padding: 20px 60px 0px; 
+          background: #F4F3EF; 
+          text-align: right;}
+.pages span { background: #f16e50; /*当前页用的span,后续页数用的a*/
+               color: #fff; }
+.pages a { background: #fff; 
+           color: #454545; 
+           padding: 5px 8px;
+           border: none; 
+           margin: 0 0 0 5px; }
+.pages span { padding: 5px 8px; 
+              border: none;
+               margin:  0 0 0 5px; }
+.pages a:hover { background: #CCC; }
+/*_______________________主栏目完成——————————————————————————————————————————*/
+footer { border-top: 9px solid #f16e50;
+           background: #242221; 
+             width: 100%;      }
+
+.footavatar { width: 700px; 
+               margin: auto;
+                position: relative; 
+                color: #666;              }
+.footavatar img{ height:110px;
+                }       /*图像*/
+
+.footphoto { position: absolute; /*两个定位，图像再内边距红条下*/
+             top: -58px;
+              left: 20px; 
+            display: block; 
+              border: #F16E50 5px solid;
+             }
+.footinfo { display: block; padding: 0 0 0 160px } /*字体右移*/
+
+.fname { color: #f16e50;
+         margin-top: 16px; 
+          font-size: 18px; 
+          line-height: 28px; }
+.fname a { color: #f16e50; }
+.finfo { line-height: 18px; }
+
+
+.visitor ul  {   list-style : none; }
+.visitor { width: 900px; 
+         margin: 40px auto 0;
+           clear: both;
+           color:#ffffff;
+         }
+.visitor h2 { color: #fff; font-size: 24px; font-weight: normal; padding: 0 20px 0 }
+.visitor ul { padding: 20px }
+.visitor ul li{display: block;
+                width:78px;
+                 float: left; 
+                margin-right: 15px; }
+.visitor ul li img { width: 78px;
+                   height: 78px; 
+                   display: block;
+                    border: #FFF 2px solid; }
+.visitor ul li a {
+                   margin-right: 10px;
+                   }
+.name{        text-align: center;
+              width: 78px;
+                margin: 10px auto;
+                color:#ffffff;}
+.visitor ul li a:hover,
+.visitor ul li:hover  { opacity: 0.5 ;}/*整个块生效*/
+
+
+.Copyright { clear:both;
+   text-align: center; color: #959595; margin: 40px 0 0 }
+.Copyright ul a { color: #f16e50; display: inline; padding: 0 10px; }
+.Copyright ul a:nth-child(-n+3) { border-right: #999 1px solid } /*括号中可填奇偶数，n是计数器从0开始*/
+.Copyright ul a:hover { color: #ff8b70; }

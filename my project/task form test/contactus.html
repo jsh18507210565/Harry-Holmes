@@ -1,0 +1,55 @@
+﻿<!DOCTYPE>
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>寒江独钓-联系我们</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/identify.js"></script>
+</head>
+<body>
+
+<div  id="main">
+
+<h1>留言板</h1>
+
+          <div class="head">
+                <div id="yone"></div>
+                <div id="ytwo"></div>
+                <div id="ythr"></div>
+	
+          </div>
+
+
+               <div id="format">
+                      <div class="xls">
+<form name="myform" action="php/post.php"  method="post" onsubmit="return checkuser();" >
+<input id="one" type="text" id="one" name="name" placeholder="您的姓名" required ><br>
+<!--value点击后不会消失-->
+<input id="two" type="text" name="call"    placeholder="您的联系电话" required ><br>
+<input id="thr" type="email" name="mail"    placeholder="您的电子邮箱" required><br>
+ <textarea  id="four" name="problem"  placeholder="您的建议(最大字数不超过1000）" rows="20" cols="30"  maxlength="200" required></textarea><br>
+
+                       </div>
+<input class="submit"  onclick="yanzheng(this.form);" type="submit" value="提交" >
+
+
+                </div>
+
+
+ </form>
+
+
+          
+
+</div>
+
+<div class="copy-rights">
+					<p>Copyright &copy; 2017.小世江 All rights reserved.
+			</div>
+
+
+
+
+</body>
+</html><!--onfocus="this.value = '';" onblur="if(this.value == ''){this.value = '您的名字';}">

@@ -1,0 +1,40 @@
+﻿    <html>  
+    <head>  
+    <title>请点击右下角滑动</title>
+    <script type="text/javascript">  
+    var currentPosition,timer;  
+    function GoTop(){  
+        timer=setInterval("runToTop()",1);/*在制定周期内，按固定间隔调用函数，单位毫秒*/  
+    }  
+    function runToTop(){  
+        currentPosition=document.documentElement.scrollTop || document.body.scrollTop; /*浏览器被卷起的高度*/  
+        currentPosition-=5;  /*浏览器被卷起高度自减10*/
+        if(currentPosition>0)  
+        {  
+            window.scrollTo(0,currentPosition);  
+        }  
+        else  
+        {  
+            window.scrollTo(0,0);  
+            clearInterval(timer);  /*清楚由setInterval设置的timeout*/
+        }  
+    }  
+    </script>  
+    <style type="text/css">  
+      
+    </style>  
+    </head>  
+    <body>    
+    <div style="height:1000px;text-align:center;font-size:200px;font-weight:bold;">吧</div>  
+    <div style="height:1000px;text-align:center;font-size:200px;font-weight:bold;">家</div>  
+    <div style="height:1000px;text-align:center;font-size:200px;font-weight:bold;">回</div>  
+    <div style="height:1000px;text-align:center;font-size:200px;font-weight:bold;">起</div>  
+    <div style="height:1000px;text-align:center;font-size:200px;font-weight:bold;">一</div>  
+      <div style="height:1000px;text-align:center;font-size:200px;font-weight:bold;">们</div>  
+    <div style="height:1000px;text-align:center;font-size:200px;font-weight:bold;">我</div>
+    <div id="back-up" onclick="GoTop()" style="border:1px solid red;height:100px;width:18px;position:fixed;cursor:pointer;right:30px;bottom:30px;" >返回顶部</div>  
+    <script>  
+   window.scrollTo(0,document.body.scrollHeight);  
+    </script>  
+    </body>  
+    </html>  

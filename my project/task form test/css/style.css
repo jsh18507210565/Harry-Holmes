@@ -1,0 +1,153 @@
+@charset "gb2312";
+* { margin: 0; padding: 0 }
+
+body{background: url(../images/bg1.jpg) no-repeat 0px 0px;/*这个文件是css子文件*/
+      font: 20px "KaiTi","宋体", "Arial Narrow", HELVETICA;
+          } 
+
+#main{display: block;
+         margin:50px  auto;
+         width: 400px;
+         text-align: center; 
+         }
+
+
+.head{background: #444444 url(../images/close.png) no-repeat 20px 15px;
+      width:400px;
+      height: 50px;
+      	border-radius:  15px 15px 0 0  ;
+	-webkit-border-radius: 15px 15px 0 0 ;
+	-moz-border-radius: 15px 15px 0 0 ;
+	-o-border-radius: 15px 15px 0 0 ;       }
+
+#yone{width: 20px;height: 20px;
+	float:right;
+   margin:15px 15px 0px 0px;
+	border-radius:10px  ;
+	-webkit-border-radius:10px ;
+	-moz-border-radius: 10px ;
+	-o-border-radius: 10px  ; 
+	background: #6756ea;  }
+#ytwo{width: 20px;height: 20px;
+	float:right;
+   margin:15px 15px 0px 0px;
+    border-radius:10px  ;
+	-webkit-border-radius:10px ;
+	-moz-border-radius: 10px ;
+	-o-border-radius: 10px  ; 
+	background:#ea569a;  }
+#ythr{width: 20px;height: 20px;
+	float:right;
+	margin:15px 15px 0px 0px;
+	border-radius:10px  ;
+	-webkit-border-radius:10px ;
+	-moz-border-radius: 10px ;
+	-o-border-radius: 10px  ; 
+	background: #f1c85f;  }
+
+
+
+
+.xls{background: #2b2b36;
+     height: 500px;}  
+
+form{display: block;
+      padding:10px 40px;}
+textarea,input{margin-top: 15px;
+	           padding-bottom: 5px;
+	           padding-top: 5px;
+       }
+label{color:red;
+       display: none;
+       margin-left: 10px;
+       background: #00BBFF;
+      }  
+
+
+
+input[type="text"] 
+{width: 90%;
+ color:#9199aa;
+  font-size: 18px;
+   border: none;
+   outline: none;
+  background: #2b2b36;;
+   border-bottom: 1px solid #484856;
+   padding: 0px 30px;
+  }
+
+
+ input[type="email"]
+ {width: 90%;
+ color:#9199aa;
+  font-size: 18px;
+   border: none;  
+   outline: none;              
+  background: #2b2b36;;  
+   border-bottom: 1px solid #484856;  
+   padding: 0px 30px;
+   
+   }
+#one{background: url(../images/adm.png) no-repeat 0px 0px;}
+#two{background: url(../images/key.png) no-repeat 0px 0px;}
+#thr{background: url(../images/pass.png) no-repeat 260px 0px;}
+
+
+textarea{width:80%;
+         height: 350px;}
+
+       /*
+ }
+ }
+input[type="text"] {
+	  width: 70%;
+	  padding: 1em 2em 1em 3em;
+	  color: #9199aa;
+	  font-size: 18px;
+	  outline: none;
+	  background: url(../images/adm.png) no-repeat 10px 15px;
+	  border: none;
+	  font-weight: 100;
+	  border-bottom: 1px solid#484856;
+	  margin-top: 2em;
+}
+ input[type="password"]{
+	  width: 70%;
+	  padding: 1em 2em 1em 3em;
+	  color: #dd3e3e;
+	  font-size: 18px;
+	  outline: none;
+	  background: url(../images/key.png) no-repeat 10px 23px;
+	  border: none;
+	  font-weight: 100;
+	  border-bottom: 1px solid#484856;
+	  margin-bottom: 3em;
+ }    */ 
+
+input[type="submit"]  {border: none;
+	margin-top: 0px;
+   background: #EE7700;
+     width:400px;
+     height: 50px;
+    border-radius: 0 0 15px 15px   ;
+	-webkit-border-radius:  0 0 15px 15px ;
+	-moz-border-radius: 0 0 15px 15px;
+	-o-border-radius: 0 0 15px 15px ; 
+	 font-size: 20px;
+	 text-align: center;  }
+input[type="submit"]:hover{border: none; 
+    transition: All 1s ease; 
+    -webkit-transition: All 1s ease ; 
+    -moz-transition: All 1s ease; 
+    -o-transition: All 1s ease; /*渐变时间*/
+      background: #FF88C2;   
+      cursor: pointer; }
+
+
+
+.copy-rights{width:100%;
+	         height: 100px;
+	         text-align: center;
+	         color: #ffffff;
+            }
+
